@@ -1,0 +1,120 @@
+/* ✅ Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ✅ Section Introduction encadrée */
+.intro {
+    text-align: center;
+    background-color: white;
+    padding: 30px 40px;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ✅ Section Services */
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/* ✅ Cartes de service */
+.service {
+    width: 300px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ Mise à jour de l’image pour "Cuisines Professionnelles" */
+.service[data-service="cuisines"] img {
+    content: url("../images/Instal_hotte_restau_2.jpg");
+}
+
+/* ✅ Images des services */
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service img:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Effet plein écran pour les images de "Nos Services" */
+.service-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* ✅ Suppression des flèches de navigation pour "Nos Services" */
+.service-overlay #prev-image,
+.service-overlay #next-image {
+    display: none;
+}
+
+/* ✅ Affichage des images en plein écran dans "Nos Services" */
+.service-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+/* ✅ Bouton de fermeture pour l'overlay des services */
+.service-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.service-overlay .close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}

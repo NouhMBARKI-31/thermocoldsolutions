@@ -1,0 +1,71 @@
+/* ✅ Mise en forme du contact dans une boîte harmonisée */
+.contact-box {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Titre et sous-titre */
+.contact-box .section-title {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-box .section-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* ✅ Liste des infos de contact */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ✅ Élément individuel (icône + texte) */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+}
+
+/* ✅ Icônes */
+.info-item img {
+    width: 25px;
+    height: 25px;
+}
+
+/* ✅ Liens */
+.info-item a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    margin-top: 50px;
+}
+

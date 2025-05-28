@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les réalisations de Thermo Cold Solutions en installation de froid industriel, climatisation et cuisines professionnelles.">
+    <meta name="keywords" content="réalisations, froid industriel, climatisation, cuisines professionnelles">
+    <meta name="author" content="THERMO COLD SOLUTIONS">
+    
+    <title>Nos Réalisations - Thermo Cold Solutions</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/realisations.css">
+</head>
+<body>
+
+    <!-- ✅ En-tête -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Nos Services</a></li>
+                <li><a href="realisations.html" class="active">Nos Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Section de présentation -->
+    <section class="intro">
+        <h1 class="section-title">Nos Réalisations</h1>
+        <p class="section-subtitle">
+            Depuis plusieurs années, <strong>Thermo Cold Solutions</strong> accompagne ses clients dans l’installation, l’entretien et la maintenance d’équipements frigorifiques et de climatisation. Nous intervenons dans divers secteurs, tels que la <strong>restauration</strong>, les <strong>boucheries</strong>, les <strong>boulangeries</strong>, et bien d’autres. Découvrez un aperçu de nos réalisations.
+        </p>
+    </section>
+
+    <!-- ✅ Ajout du texte décoratif avant la galerie -->
+    <div class="realisation-intro">
+        <p>📸 Voici un échantillon de nos réalisations 📸</p>
+    </div>
+
+    <!-- ✅ Galerie des réalisations -->
+    <section class="realisations-gallery">
+        <div class="realisation">
+            <img class="zoomable" src="../images/Instal_vitrine_boucherie.jpg" alt="Installation d'une vitrine de boucherie">
+            <p>Installation d'une vitrine de boucherie avec groupe froid logé.</p>
+        </div>
+
+        <!-- ✅ Modification de la climatisation -->
+        <div class="realisation gallery" data-images='["../images/photo_2.jpg", "../images/Instal_clim_boucherie.jpg"]'>
+            <img class="zoomable" src="../images/photo_2.jpg" alt="Installation d’une climatisation 3,5 kW dans une boucherie.">
+            <p>Installation d’une climatisation 3,5 kW dans une boucherie.</p>
+        </div>
+
+        <div class="realisation">
+            <img class="zoomable" src="../images/Instal_vitrine_vente.png" alt="Installation d'un groupe froid">
+            <p>Installation et mise en service d’une vitrine de vente (10 mètres) dans une boucherie.</p>
+        </div>
+
+        <!-- ✅ Modification de la chambre froide -->
+        <div class="realisation gallery" data-images='["../images/Amenagement_boucherie_6.jpg", "../images/Amenagement_boucherie_5.jpg", "../images/Amenagement_boucherie_7.jpg"]'>
+            <img class="zoomable" src="../images/Amenagement_boucherie_6.jpg" alt="Montage et mise en service d’une chambre froide positive dans une boucherie.">
+            <p>Montage et mise en service d’une chambre froide positive dans une boucherie.</p>
+        </div>
+
+        <!-- ✅ Nouvelle catégorie : Installation chambre froide restaurant -->
+        <div class="realisation gallery" data-images='["../images/Instal_froide.jpg", "../images/Instal_froide_2.jpg", "../images/Instal_froide_3.jpg", "../images/Instal_froide_4.jpg", "../images/Instal_froide_5.jpg"]'>
+            <img class="zoomable" src="../images/Instal_froide.jpg" alt="Installation d'une chambre froide dans un restaurant">
+            <p>Installation d'une chambre froide positive dans un restaurant.</p>
+        </div>
+
+        <!-- ✅ Nouvelle catégorie : Aménagement boucherie Toulouse -->
+        <div class="realisation gallery" data-images='["../images/Amenagement_boucherie.jpg", "../images/Amenagement_boucherie_2.jpg", "../images/Amenagement_boucherie_3.jpg", "../images/Amenagement_boucherie_4.jpg", "../images/Amenagement_boucherie_5.jpg", "../images/Amenagement_boucherie_6.jpg", "../images/Amenagement_boucherie_7.jpg", "../images/Amenagement_boucherie_8.jpg", "../images/Amenagement_boucherie_9.jpg"]'>
+            <img class="zoomable" src="../images/Amenagement_boucherie.jpg" alt="Aménagement d'une boucherie">
+            <p>Aménagement d'une boucherie à Toulouse.</p>
+        </div>
+
+        <!-- ✅ Galerie avec effet slider -->
+        <div class="realisation gallery" data-images='["../images/Instal_hotte_restau.jpg", "../images/Instal_hotte_restau_2.jpg"]'>
+            <img class="zoomable" src="../images/Instal_hotte_restau_2.jpg" alt="Installation de hôtte professionnelle dans un restaurant">
+            <p>Installation de hôtte professionnelle dans un restaurant</p>
+        </div>
+    </section>
+
+    <!-- ✅ Overlay pour affichage plein écran et slider -->
+    <div class="fullscreen-overlay" id="image-overlay">
+        <span class="close-btn" id="close-overlay">&times;</span>
+        <img id="fullscreen-image" src="" alt="Agrandissement de l'image">
+        <button id="prev-image">&lt;</button>
+        <button id="next-image">&gt;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 THERMO COLD SOLUTIONS - Tous droits réservés.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
